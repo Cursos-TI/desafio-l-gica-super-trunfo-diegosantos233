@@ -95,29 +95,6 @@ int main() {
 
     // Super Poder carta 2
     Super_Poder2 = populacao2 + area_em_km2 + numero_de_pontos_turisticos2 + pib2 + pib_per_capita2 + Densidade_Populaciona2;
-
-    // resultado da batalha carta
-    char resultado_populacao[50] = "resultado";
-    char resultado_area_em_km[50] = "resultado";
-    char resultado_numero_de_pontos_turisticos[50] = "resultado";
-    char resultado_pib[50] = "resultado";
-    char resultado_pib_per_capita[50] = "resultado";
-    char resultado_Densidade_Populaciona[50] = "resultado";
-    char resultado_Super_Poder[50] = "resultado";
-
-    // logica da batalha
-    if(populacao1 > populacao2){
-      resultado_populacao[50] = "dsfdsf";
-
-    }else{
-        resultado_populacao[50] = "dsfdsf";
-    }
-
-    
-    // Explicação do resultado da batalha
-    
-    printf("Entenda como vai funcionar a batalha das cartas\n");
-    printf("Resultado da batalha (1 representa que a primeira Carta vence e 0 representa que a segunda Carta vence).\n");
     
     // exibindo Carta 1
     printf("*******Carta 1*****\n");
@@ -128,19 +105,19 @@ int main() {
 
     printf("*Nome da Cidade: %s*\n", nome_da_cidade1);
 
-    printf("*População: %lu* resultado da batalha(%s)\n", populacao1,resultado_populacao);
+    printf("*População: %lu*\n", populacao1);
 
-    printf("*Área: %.2f km²* resultado da batalha()\n", area_em_km1);
+    printf("*Área: %.2f km²*\n", area_em_km1);
 
-    printf("*%d Pontos Turísticos* resultado da batalha()\n", numero_de_pontos_turisticos1);
+    printf("*%d Pontos Turísticos*\n", numero_de_pontos_turisticos1);
 
-    printf("*PIB: %.2f bilhões de reais* resultado da batalha()\n", pib1);
+    printf("*PIB: %.2f bilhões de reais*\n", pib1);
     
-    printf("*PIB per Capita: %.2f reais* resultado da batalha()\n", pib_per_capita1);
+    printf("*PIB per Capita: %.2f reais*\n", pib_per_capita1);
     
-    printf("*Densidade Populacional: %.2f hab/km²* resultado da batalha()\n",Densidade_Populaciona1);
+    printf("*Densidade Populacional: %.2f hab/km²*\n",Densidade_Populaciona1);
     
-    printf("*Super Poder: %.2f* resultado da batalha()\n",Super_Poder1);
+    printf("*Super Poder: %.2f*\n",Super_Poder1);
 
     
     // exibindo Carta 2
@@ -152,19 +129,70 @@ int main() {
 
     printf("*Nome da Cidade: %s*\n", nome_da_cidade2);
 
-    printf("*População: %lu* resultado da batalha()\n", populacao2);
+    printf("*População: %lu*\n", populacao2);
 
-    printf("*Área: %.2f km²* resultado da batalha()\n", area_em_km2);
+    printf("*Área: %.2f km²*\n", area_em_km2);
 
-    printf("*%d Pontos Turísticos* resultado da batalha()\n", numero_de_pontos_turisticos2);
+    printf("*%d Pontos Turísticos*\n", numero_de_pontos_turisticos2);
 
-    printf("*PIB: %.2f bilhões de reais* resultado da batalha()\n", pib2);
+    printf("*PIB: %.2f bilhões de reais*)\n", pib2);
 
-    printf("*PIB per Capita: %.2f reais* resultado da batalha()\n", pib_per_capita2);
+    printf("*PIB per Capita: %.2f reais*\n", pib_per_capita2);
     
-    printf("*Densidade Populacional: %.2f hab/km²* resultado da batalha()\n",Densidade_Populaciona2);
+    printf("*Densidade Populacional: %.2f hab/km²*\n",Densidade_Populaciona2);
 
-    printf("*Super Poder: %.2f* resultado da batalha()\n",Super_Poder2);
+    printf("*Super Poder: %.2f*\n",Super_Poder2);
 
+       // resultado da batalha carta
+
+    if(populacao1 > populacao2){
+        printf("No Atributos População a carta %s abateu a carta %s\n",nome_da_cidade1,nome_da_cidade2);
+
+    }else{
+        printf("No Atributos População a carta %s abateu a carta %s\n",nome_da_cidade2,nome_da_cidade1);
+    }
+
+    if(area_em_km1 > area_em_km2){
+        printf("No Atributos Área a carta %s abateu a carta %s\n",nome_da_cidade1,nome_da_cidade2);
+
+    }else{
+        printf("No Atributos Área a carta %s abateu a carta %s\n",nome_da_cidade2,nome_da_cidade1);
+    }
+
+    if(numero_de_pontos_turisticos1 > numero_de_pontos_turisticos2){
+        printf("No Atributos Pontos Turísticos a carta %s abateu a carta %s\n",nome_da_cidade1,nome_da_cidade2);
+
+    }else{
+        printf("No Atributos Pontos Turísticos a carta %s abateu a carta %s\n",nome_da_cidade2,nome_da_cidade1);
+    }
+    if(pib1 > pib2){
+        printf("No Atributos PIB a carta %s abateu a carta %s\n",nome_da_cidade1,nome_da_cidade2);
+
+    }else{
+        printf("No Atributos PIB a carta %s abateu a carta %s\n",nome_da_cidade2,nome_da_cidade1);
+    }
+
+    if(pib_per_capita1 > pib_per_capita2){
+        printf("No Atributos PIB per Capita a carta %s abateu a carta %s\n",nome_da_cidade1,nome_da_cidade2);
+
+    }else{
+        printf("No Atributos PIB per Capita a carta %s abateu a carta %s\n",nome_da_cidade2,nome_da_cidade1);
+    }
+    if(Densidade_Populaciona1 > Densidade_Populaciona2){
+        printf("No Atributos Densidade Populacional a carta %s abateu a carta %s\n",nome_da_cidade1,nome_da_cidade2);
+
+    }else{
+        printf("No Atributos Densidade Populacional a carta %s abateu a carta %s\n",nome_da_cidade2,nome_da_cidade1);
+    }
+
+    if(Super_Poder1 > Super_Poder2){
+        printf("No Atributos Super Poder a carta %s abateu a carta %s\n",nome_da_cidade1,nome_da_cidade2);
+
+    }else{
+        printf("No Atributos Super Poder a carta %s abateu a carta %s\n",nome_da_cidade2,nome_da_cidade1);
+    }
+   
+   
+   
     return 0;
 }
