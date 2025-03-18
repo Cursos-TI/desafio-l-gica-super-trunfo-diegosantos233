@@ -178,7 +178,7 @@ int main() {
     }else{
         printf("No Atributos PIB per Capita a carta %s abateu a carta %s\n",nome_da_cidade2,nome_da_cidade1);
     }
-    if(Densidade_Populaciona1 > Densidade_Populaciona2){
+    if(Densidade_Populaciona1 < Densidade_Populaciona2){
         printf("No Atributos Densidade Populacional a carta %s abateu a carta %s\n",nome_da_cidade1,nome_da_cidade2);
 
     }else{
