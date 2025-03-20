@@ -149,49 +149,65 @@ int main() {
     if(populacao1 > populacao2){
         printf("No Atributos População a carta %s abateu a carta %s\n",nome_da_cidade1,nome_da_cidade2);
 
-    }else{
+    }else if (populacao1 < populacao2){
         printf("No Atributos População a carta %s abateu a carta %s\n",nome_da_cidade2,nome_da_cidade1);
-        }
+    }else{
+        printf("Houve um empate!");
+    }
 
     if(area_em_km1 > area_em_km2){
         printf("No Atributos Área a carta %s abateu a carta %s\n",nome_da_cidade1,nome_da_cidade2);
 
-    }else{
+    }else if (area_em_km1 < area_em_km2){
             printf("No Atributos Área a carta %s abateu a carta %s\n",nome_da_cidade2,nome_da_cidade1);
-        }
+    }else{
+        printf("Houve um empate!");
+    }
 
     if(numero_de_pontos_turisticos1 > numero_de_pontos_turisticos2){
         printf("No Atributos Pontos Turísticos a carta %s abateu a carta %s\n",nome_da_cidade1,nome_da_cidade2);
 
-    }else{
+    }else if(numero_de_pontos_turisticos1 < numero_de_pontos_turisticos2){
             printf("No Atributos Pontos Turísticos a carta %s abateu a carta %s\n",nome_da_cidade2,nome_da_cidade1);
-        }
+    }else{
+        printf("Houve um empate!");
+    }
+    
     if(pib1 > pib2){
             printf("No Atributos PIB a carta %s abateu a carta %s\n",nome_da_cidade1,nome_da_cidade2);
 
-    }else{
+    }else if(pib1 < pib2){
         printf("No Atributos PIB a carta %s abateu a carta %s\n",nome_da_cidade2,nome_da_cidade1);
-        }
+    }else{
+        printf("Houve um empate!");
+    }
 
     if(pib_per_capita1 > pib_per_capita2){
             printf("No Atributos PIB per Capita a carta %s abateu a carta %s\n",nome_da_cidade1,nome_da_cidade2);
 
-    }else{
+    }else if(pib_per_capita1 < pib_per_capita2){
         printf("No Atributos PIB per Capita a carta %s abateu a carta %s\n",nome_da_cidade2,nome_da_cidade1);
-        }
+    }else{
+        printf("Houve um empate!");
+    }
+    
     if(Densidade_Populaciona1 < Densidade_Populaciona2){
         printf("No Atributos Densidade Populacional a carta %s abateu a carta %s\n",nome_da_cidade1,nome_da_cidade2);
 
-    }else{
+    }else if(Densidade_Populaciona2 < Densidade_Populaciona1){
         printf("No Atributos Densidade Populacional a carta %s abateu a carta %s\n",nome_da_cidade2,nome_da_cidade1);
-        }
+    }else{
+        printf("Houve um empate!");
+    }
 
     if(Super_Poder1 > Super_Poder2){
         printf("No Atributos Super Poder a carta %s abateu a carta %s\n",nome_da_cidade1,nome_da_cidade2);
 
-    }else{
+    }else if (Super_Poder1 < Super_Poder2){
         printf("No Atributos Super Poder a carta %s abateu a carta %s\n",nome_da_cidade2,nome_da_cidade1);
-        }
+    }else{
+        printf("Houve um empate!");
+    }
 
     return 0;
 }
