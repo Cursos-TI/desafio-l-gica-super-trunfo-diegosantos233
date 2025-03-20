@@ -152,13 +152,13 @@ int main() {
     printf("jogo Super Trunfo\n");
     printf("Escolha uma opção\n");
     printf("1. todos os Atributos\n");
-    printf("2. Atributos População\n");
-    printf("3. Atributos Área\n");
-    printf("4. Atributos Pontos Turísticos\n");
-    printf("5. Atributos PIB\n");
-    printf("6. Atributos PIB per Capita\n");
-    printf("7. Atributos Densidade Populacional\n");
-    printf("8. Atributos Super Poder\n");
+    printf("2. Atributo: População\n");
+    printf("3. Atributo: Área\n");
+    printf("4. Atributo: Pontos Turísticos\n");
+    printf("5. Atributo: PIB\n");
+    printf("6. Atributo: PIB per Capita\n");
+    printf("7. Atributo: Densidade Populacional\n");
+    printf("8. Atributo: Super Poder\n");
     printf("Escolha\n");
     scanf("%d", &menu);
     
