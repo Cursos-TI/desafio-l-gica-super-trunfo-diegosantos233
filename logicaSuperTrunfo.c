@@ -166,63 +166,91 @@ int main() {
     {
     case 1:
         if(populacao1 > populacao2){
+            printf("No Atributos População a carta: %s tem: %lu pontos.\n",nome_da_cidade1,populacao1);
+            printf("No Atributos População a carta: %s tem: %lu pontos.\n",nome_da_cidade2,populacao2);
             printf("No Atributos População a carta %s abateu a carta %s\n",nome_da_cidade1,nome_da_cidade2);
 
         }else if (populacao1 < populacao2){
+            printf("No Atributos População a carta: %s tem: %lu pontos.\n",nome_da_cidade2,populacao2);
+            printf("No Atributos População a carta: %s tem: %lu pontos.\n",nome_da_cidade1,populacao1);
             printf("No Atributos População a carta %s abateu a carta %s\n",nome_da_cidade2,nome_da_cidade1);
         }else{
             printf("Houve um empate!");
         }
 
         if(area_em_km1 > area_em_km2){
+            printf("No Atributos População a carta: %s tem: %f pontos.\n",nome_da_cidade1,area_em_km1);
+            printf("No Atributos População a carta: %s tem: %f pontos.\n",nome_da_cidade2,area_em_km2);
             printf("No Atributos Área a carta %s abateu a carta %s\n",nome_da_cidade1,nome_da_cidade2);
 
         }else if (area_em_km1 < area_em_km2){
-                printf("No Atributos Área a carta %s abateu a carta %s\n",nome_da_cidade2,nome_da_cidade1);
+            printf("No Atributos População a carta: %s tem: %f pontos.\n",nome_da_cidade2,area_em_km2);
+            printf("No Atributos População a carta: %s tem: %f pontos.\n",nome_da_cidade1,area_em_km1);
+            printf("No Atributos Área a carta %s abateu a carta %s\n",nome_da_cidade2,nome_da_cidade1);
         }else{
             printf("Houve um empate!");
         }
 
         if(numero_de_pontos_turisticos1 > numero_de_pontos_turisticos2){
+            printf("No Atributos População a carta: %s tem: %d pontos.\n",nome_da_cidade1,numero_de_pontos_turisticos1);
+            printf("No Atributos População a carta: %s tem: %d pontos.\n",nome_da_cidade2,numero_de_pontos_turisticos2);
             printf("No Atributos Pontos Turísticos a carta %s abateu a carta %s\n",nome_da_cidade1,nome_da_cidade2);
 
         }else if(numero_de_pontos_turisticos1 < numero_de_pontos_turisticos2){
-                printf("No Atributos Pontos Turísticos a carta %s abateu a carta %s\n",nome_da_cidade2,nome_da_cidade1);
+            printf("No Atributos População a carta: %s tem: %d pontos.\n",nome_da_cidade2,numero_de_pontos_turisticos2);
+            printf("No Atributos População a carta: %s tem: %d pontos.\n",nome_da_cidade1,numero_de_pontos_turisticos1);
+            printf("No Atributos Pontos Turísticos a carta %s abateu a carta %s\n",nome_da_cidade2,nome_da_cidade1);
         }else{
             printf("Houve um empate!");
         }
         
         if(pib1 > pib2){
-                printf("No Atributos PIB a carta %s abateu a carta %s\n",nome_da_cidade1,nome_da_cidade2);
+            printf("No Atributos População a carta: %s tem: %f pontos.\n",nome_da_cidade1,pib1);
+            printf("No Atributos População a carta: %s tem: %f pontos.\n",nome_da_cidade2,pib2);
+            printf("No Atributos PIB a carta %s abateu a carta %s\n",nome_da_cidade1,nome_da_cidade2);
 
         }else if(pib1 < pib2){
+            printf("No Atributos População a carta: %s tem: %f pontos.\n",nome_da_cidade2,pib2);
+            printf("No Atributos População a carta: %s tem: %f pontos.\n",nome_da_cidade1,pib1);
             printf("No Atributos PIB a carta %s abateu a carta %s\n",nome_da_cidade2,nome_da_cidade1);
         }else{
             printf("Houve um empate!");
         }
 
         if(pib_per_capita1 > pib_per_capita2){
-                printf("No Atributos PIB per Capita a carta %s abateu a carta %s\n",nome_da_cidade1,nome_da_cidade2);
+            printf("No Atributos População a carta: %s tem: %f pontos.\n",nome_da_cidade1,pib_per_capita1);
+            printf("No Atributos População a carta: %s tem: %f pontos.\n",nome_da_cidade2,pib_per_capita2);
+            printf("No Atributos PIB per Capita a carta %s abateu a carta %s\n",nome_da_cidade1,nome_da_cidade2);
 
         }else if(pib_per_capita1 < pib_per_capita2){
+            printf("No Atributos População a carta: %s tem: %f pontos.\n",nome_da_cidade2,pib_per_capita2);
+            printf("No Atributos População a carta: %s tem: %f pontos.\n",nome_da_cidade1,pib_per_capita1);
             printf("No Atributos PIB per Capita a carta %s abateu a carta %s\n",nome_da_cidade2,nome_da_cidade1);
         }else{
             printf("Houve um empate!");
         }
         
         if(Densidade_Populaciona1 < Densidade_Populaciona2){
+            printf("No Atributos População a carta: %s tem: %f pontos.\n",nome_da_cidade1,Densidade_Populaciona1);
+            printf("No Atributos População a carta: %s tem: %f pontos.\n",nome_da_cidade2,Densidade_Populaciona2);
             printf("No Atributos Densidade Populacional a carta %s abateu a carta %s\n",nome_da_cidade1,nome_da_cidade2);
 
         }else if(Densidade_Populaciona2 < Densidade_Populaciona1){
+            printf("No Atributos População a carta: %s tem: %f pontos.\n",nome_da_cidade2,Densidade_Populaciona2);
+            printf("No Atributos População a carta: %s tem: %f pontos.\n",nome_da_cidade1,Densidade_Populaciona1);
             printf("No Atributos Densidade Populacional a carta %s abateu a carta %s\n",nome_da_cidade2,nome_da_cidade1);
         }else{
             printf("Houve um empate!");
         }
 
         if(Super_Poder1 > Super_Poder2){
+            printf("No Atributos População a carta: %s tem: %f pontos.\n",nome_da_cidade1,Super_Poder1);
+            printf("No Atributos População a carta: %s tem: %f pontos.\n",nome_da_cidade2,Super_Poder2);
             printf("No Atributos Super Poder a carta %s abateu a carta %s\n",nome_da_cidade1,nome_da_cidade2);
 
         }else if (Super_Poder1 < Super_Poder2){
+            printf("No Atributos População a carta: %s tem: %f pontos.\n",nome_da_cidade2,Super_Poder2);
+            printf("No Atributos População a carta: %s tem: %f pontos.\n",nome_da_cidade1,Super_Poder1);
             printf("No Atributos Super Poder a carta %s abateu a carta %s\n",nome_da_cidade2,nome_da_cidade1);
         }else{
             printf("Houve um empate!");
