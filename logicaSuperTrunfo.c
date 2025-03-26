@@ -2,7 +2,7 @@
 
 int main() {
     
-    short int menu;
+    int menu;
     
     //carta 1
     char estado1[3] = "A";
