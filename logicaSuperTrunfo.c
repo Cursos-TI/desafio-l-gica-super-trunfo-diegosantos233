@@ -368,6 +368,126 @@ int main() {
             printf("No Atributos Super Poder Houve um empate!\n");
         }
 
+    case 9:
+         
+    
+        // resultado da batalha
+        short int resultado1;
+        short int resultado2;
+        
+        short int corporação1;
+        short int corporação2;
+        
+        printf("escolheu um atributo\n");
+        printf("1. Atributo: População\n");
+        printf("2. Atributo: Área\n");
+        printf("3. Atributo: Pontos Turísticos\n");
+        printf("4. Atributo: PIB\n");
+        printf("5. Atributo: PIB per Capita\n");
+        printf("6. Atributo: Densidade Populacional\n");
+        printf("7. Atributo: Super Poder\n");
+        printf("Escolha\n");
+        scanf("%d",&corporação1);
+        
+        switch (corporação1)
+        {
+        case 1:
+            resultado1 = populacao1 > populacao2 ? 1: 0;
+            break;
+        case 2:
+            resultado1 = area_em_km1 > area_em_km2 ? 1: 0;
+            break;
+        
+        case 3:
+            resultado1 = numero_de_pontos_turisticos1 > numero_de_pontos_turisticos2 ? 1: 0;
+            break;
 
+        case 4:
+            resultado1 = pib1 > pib2 ? 1: 0;
+            break;
+
+        case 5:
+            resultado1 = pib_per_capita1 > pib_per_capita2 ? 1: 0;
+            break;
+        
+        case 6:
+            resultado1 = Densidade_Populaciona1 < Densidade_Populaciona2 ? 1: 0;
+            break;
+            
+        case 7:
+            resultado1 = Super_Poder1 > Super_Poder2 ? 1: 0;
+            break;
+        
+        default:
+            printf("opção inválida!");
+            break;
+        }
+    
+        printf("escolheu um atributo\n");
+        printf("1. Atributo: População\n");
+        printf("2. Atributo: Área\n");
+        printf("3. Atributo: Pontos Turísticos\n");
+        printf("4. Atributo: PIB\n");
+        printf("5. Atributo: PIB per Capita\n");
+        printf("6. Atributo: Densidade Populacional\n");
+        printf("7. Atributo: Super Poder\n");
+        printf("Escolha\n");
+        scanf("%d",&corporação2);
+        
+        if (corporação1 == corporação2)
+        {
+            printf("Você escolheu o mesmo atributo!");
+        }else{
+        
+            switch (corporação2)
+            {
+            case 1:
+                resultado2 = populacao1 > populacao2 ? 1: 0;
+                break;
+            
+            case 2:
+                resultado2 = area_em_km1 > area_em_km2 ? 1: 0;
+                break;
+            case 3:
+                resultado2 = numero_de_pontos_turisticos1 > numero_de_pontos_turisticos2 ? 1: 0;
+                break;
+            
+            case 4:
+                resultado2 = pib1 > pib2 ? 1: 0;
+                break;
+
+            case 5:
+                resultado2 = pib_per_capita1 > pib_per_capita2 ? 1: 0;
+                break;
+
+                case 6:
+                    resultado2 = Densidade_Populaciona1 < Densidade_Populaciona2 ? 1: 0;
+                break;
+
+            case 7:
+                resultado2 = Super_Poder1 > Super_Poder2 ? 1: 0;
+                break;
+
+            default:
+             printf("opção inválida!\n");
+                break;
+            }
+        
+    
+        }
+
+        if (corporação1 && corporação2)
+        {
+            printf("Parabiens, você venceu\n!");
+        
+        }else if (corporação1 != corporação2)
+        {
+            printf("Empatou!n");
+        }else{
+            printf("Infelizmente, você perdeu!n");
+        }
+        
+        
+    
     return 0;
 }
