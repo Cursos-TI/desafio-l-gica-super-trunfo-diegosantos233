@@ -375,11 +375,11 @@ int main() {
          
     
         // resultado da batalha
-        short int resultado1;
-        short int resultado2;
+         int resultado1;
+         int resultado2;
         
-        short int corporação1;
-        short int corporação2;
+         int corporação1;
+         int corporação2;
         
         printf("escolheu um atributo\n");
         printf("1. Atributo: População\n");
