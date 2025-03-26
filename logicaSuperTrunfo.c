@@ -159,6 +159,7 @@ int main() {
     printf("6. Atributo: PIB per Capita\n");
     printf("7. Atributo: Densidade Populacional\n");
     printf("8. Atributo: Super Poder\n");
+    printf("9. 2 Atributo\n");
     printf("Escolha\n");
     scanf("%d", &menu);
     
@@ -367,6 +368,8 @@ int main() {
         }else{
             printf("No Atributos Super Poder Houve um empate!\n");
         }
+
+        break;
 
     case 9:
          
