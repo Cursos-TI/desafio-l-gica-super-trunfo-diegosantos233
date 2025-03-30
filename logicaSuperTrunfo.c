@@ -489,9 +489,7 @@ int main() {
         }else{
             printf("Infelizmente, você perdeu!n");
         }
-
-        break;
         
-    
+        break;     
     return 0;
 }
